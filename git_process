@@ -1,0 +1,12 @@
+  git clone https://github.com/kinetickode/shellscripts.git
+  cd shellscripts/
+  git checkout -b change1
+  cp ~/.bashrc
+  cp ~/.bash_profile .
+  git status
+  git add .bash_profile
+  git add .bashrc
+  git commit -a -m "add bash scripts"
+  git push -u origin change1
+  git checkout master
+  git push origin --delete change1
